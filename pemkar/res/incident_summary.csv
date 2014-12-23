@@ -1,0 +1,255 @@
+kelurahan,kecamatan,total_insiden,total_petugas_mati,total_petugas_luka,total_masyarakat_mati,total_masyarakat_luka,bangunan_runtuh,kebakaran,transportasi,air,ketinggian,b3,pgd_paramedik,pgd_transportasi
+Bekasi,Bekasi,13,0,0,0,0,0,11,0,2,0,0,0,0
+Cakung Barat,Cakung,7,0,0,0,0,0,5,0,2,0,0,0,0
+Rawa Terate,Cakung,9,0,0,0,0,0,9,0,0,0,0,0,0
+Pulo Gebang,Cakung,11,0,0,0,0,0,10,0,0,0,0,0,1
+Cakung Timur,Cakung,4,0,0,0,0,0,4,0,0,0,0,0,0
+Jatinegara,Cakung,8,0,0,0,0,0,7,0,1,0,0,0,0
+Penggilingan ,Cakung,9,0,0,1,1,0,5,0,3,1,0,0,0
+Rawasari ,Cempaka Putih,2,0,0,0,0,0,2,0,0,0,0,0,0
+Cempaka Putih Timur,Cempaka Putih,8,0,0,0,1,0,7,0,1,0,0,0,0
+Cempaka Putih Barat ,Cempaka Putih,7,0,2,1,2,0,7,0,0,0,0,0,0
+Cengkareng Barat,Cengkareng,16,0,0,0,2,0,13,0,3,0,0,0,0
+Duri Kosambi,Cengkareng,6,0,0,0,0,0,6,0,0,0,0,0,0
+Kedaung Kali Angke,Cengkareng,9,0,0,1,0,0,3,0,6,0,0,0,0
+Rawa Buaya,Cengkareng,10,0,0,0,0,1,4,0,5,0,0,0,0
+Cengkareng Timur,Cengkareng,15,0,0,0,0,0,7,0,3,0,0,0,5
+Kapuk,Cengkareng,23,0,0,1,1,0,10,0,13,0,0,0,0
+Pondok Labu,Cilandak,4,0,0,1,2,1,1,0,1,0,0,0,1
+Cilandak Barat,Cilandak,15,0,0,1,0,0,13,0,0,0,0,1,1
+Gandaria Selatan,Cilandak,3,0,0,0,0,0,2,0,1,0,0,0,0
+Cipete Selatan,Cilandak,6,0,0,1,0,0,4,0,1,0,0,0,1
+Lebak Bulus,Cilandak,7,0,0,0,0,0,4,0,0,1,0,0,2
+Semper Barat,Cilincing,7,0,0,0,0,1,4,0,0,0,0,0,2
+Rorotan,Cilincing,7,0,0,0,0,0,7,0,0,0,0,0,0
+Sukapura,Cilincing,3,0,0,0,0,0,3,0,0,0,0,0,0
+Semper Timur,Cilincing,4,0,0,0,0,0,4,0,0,0,0,0,0
+Kalibaru,Cilincing,5,0,0,0,1,0,5,0,0,0,0,0,0
+Cilincing,Cilincing,6,0,0,0,0,0,5,0,0,0,0,0,1
+Marunda,Cilincing,5,0,0,0,1,0,4,0,0,1,0,0,0
+Cilangkap,Cipayung,2,0,0,1,0,1,0,0,1,0,0,0,0
+Pondok Rangon,Cipayung,1,0,0,0,0,0,1,0,0,0,0,0,0
+Ceger,Cipayung,3,0,0,0,0,0,3,0,0,0,0,0,0
+Munjul,Cipayung,1,0,0,0,0,1,0,0,0,0,0,0,0
+Setu,Cipayung,1,0,0,0,0,0,1,0,0,0,0,0,0
+Lubang Buaya,Cipayung,5,0,0,0,0,0,5,0,0,0,0,0,0
+Bambu Apus,Cipayung,6,0,0,0,0,0,6,0,0,0,0,0,0
+Cipayung,Cipayung,4,0,0,0,0,0,4,0,0,0,0,0,0
+Kelapa Dua Wetan,Ciracas,4,0,0,0,0,1,2,0,0,0,0,0,1
+Ciracas,Ciracas,9,0,0,0,0,1,7,0,0,0,0,0,1
+Rambutan,Ciracas,1,0,0,0,0,1,0,0,0,0,0,0,0
+Susukan,Ciracas,1,0,0,0,0,0,1,0,0,0,0,0,0
+Cibubur,Ciracas,6,0,0,0,1,1,5,0,0,0,0,0,0
+Depok,Depok,7,0,0,0,0,0,7,0,0,0,0,0,0
+Malaka Sari,Duren Sawit,3,0,0,0,0,0,3,0,0,0,0,0,0
+Pondok Bambu,Duren Sawit,3,0,0,0,0,0,3,0,0,0,0,0,0
+Duren Sawit,Duren Sawit,11,0,0,0,0,0,8,0,1,0,0,0,2
+Pondok Kelapa,Duren Sawit,8,0,0,0,0,1,6,0,0,0,0,0,1
+Klender,Duren Sawit,11,0,0,0,1,0,9,0,1,0,0,0,1
+Malaka Jaya,Duren Sawit,1,0,0,0,0,0,1,0,0,0,0,0,0
+Pondok Kopi,Duren Sawit,1,0,0,0,0,0,1,0,0,0,0,0,0
+Petojo Selatan ,Gambir,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kebon Kelapa ,Gambir,2,0,0,0,0,0,2,0,0,0,0,0,0
+Gambir ,Gambir,9,0,0,0,2,0,4,0,0,0,0,5,0
+Petojo Utara,Gambir,4,0,0,0,0,0,4,0,0,0,0,0,0
+Cideng,Gambir,4,0,0,0,0,0,4,0,0,0,0,0,0
+Tanjung Duren Utara,Grogol Petamburan,6,0,0,0,2,0,1,0,4,0,0,0,1
+Tomang,Grogol Petamburan,6,0,0,0,0,0,4,0,2,0,0,0,0
+Wijaya Kusuma,Grogol Petamburan,11,0,0,0,2,0,9,0,1,0,0,0,1
+Jelambar Baru,Grogol Petamburan,10,0,0,1,1,0,6,0,4,0,0,0,0
+Jelambar,Grogol Petamburan,29,0,0,4,4,0,7,0,20,0,0,0,2
+Tanjung Duren Selatan,Grogol Petamburan,4,0,0,0,0,0,0,0,4,0,0,0,0
+Grogol,Grogol Petamburan,34,0,0,1,0,0,3,0,31,0,0,0,0
+Cipedak,Jagakarsa,5,0,0,0,0,0,4,0,1,0,0,0,0
+Ciganjur,Jagakarsa,5,0,0,0,0,0,5,0,0,0,0,0,0
+Tanjung Barat,Jagakarsa,3,0,0,0,0,1,2,0,0,0,0,0,0
+Jagakarsa,Jagakarsa,6,0,0,0,0,0,5,0,0,0,0,0,1
+Lenteng Agung,Jagakarsa,2,0,0,0,0,0,2,0,0,0,0,0,0
+Srengseng Sawah,Jagakarsa,5,0,0,0,0,0,5,0,0,0,0,0,0
+Cipinang Besar Selatan,Jatinegara,3,0,0,0,0,0,2,0,0,0,0,0,1
+Bali Mester,Jatinegara,2,0,0,0,0,0,2,0,0,0,0,0,0
+Kampung Melayu,Jatinegara,10,0,0,0,0,1,3,0,6,0,0,0,0
+Cipinang Cempedak,Jatinegara,1,0,0,0,0,0,1,0,0,0,0,0,0
+Cipinang Besar Utara,Jatinegara,4,0,0,0,0,1,2,0,0,0,0,0,1
+Bidara Cina,Jatinegara,8,0,0,0,0,1,4,0,2,0,0,0,1
+Kampung Rawa ,Johar Baru,4,0,0,0,0,0,4,0,0,0,0,0,0
+Tanah Tinggi,Johar Baru,2,0,0,0,0,0,2,0,0,0,0,0,0
+Johar Baru ,Johar Baru,3,0,0,0,0,0,3,0,0,0,0,0,0
+Galur ,Johar Baru,1,0,0,0,0,0,1,0,0,0,0,0,0
+Pegadungan,Kalideres,10,0,0,2,3,1,9,0,0,0,0,0,0
+Semanan,Kalideres,10,0,0,2,0,0,9,0,0,0,0,0,1
+Kalideres,Kalideres,14,0,0,0,0,0,13,0,0,0,0,0,1
+Tegal Alur,Kalideres,11,0,0,0,0,0,11,0,0,0,0,0,0
+Kamal,Kalideres,5,0,0,0,0,0,5,0,0,0,0,0,0
+Petogogan,Kebayoran Baru,4,0,0,0,0,0,4,0,0,0,0,0,0
+Melawai,Kebayoran Baru,3,0,0,0,0,0,3,0,0,0,0,0,0
+Senayan,Kebayoran Baru,4,0,0,0,0,0,3,0,0,0,0,1,0
+Cipete Utara,Kebayoran Baru,5,0,0,0,1,0,5,0,0,0,0,0,0
+Pulo,Kebayoran Baru,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kramat Pela,Kebayoran Baru,2,0,0,0,0,0,2,0,0,0,0,0,0
+Gunung,Kebayoran Baru,2,0,0,0,0,0,1,0,0,0,0,0,1
+Selong,Kebayoran Baru,1,0,0,0,0,0,1,0,0,0,0,0,0
+Rawa Barat,Kebayoran Baru,1,0,0,0,0,0,1,0,0,0,0,0,0
+Gandaria Utara,Kebayoran Baru,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kebayoran Lama Utara,Kebayoran Lama,3,0,0,0,0,0,3,0,0,0,0,0,0
+Grogol Selatan,Kebayoran Lama,5,0,0,0,0,0,5,0,0,0,0,0,0
+Cipulir,Kebayoran Lama,3,0,0,0,0,0,3,0,0,0,0,0,0
+Grogol Utara,Kebayoran Lama,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kebayoran Lama Selatan,Kebayoran Lama,11,0,0,0,0,0,7,0,3,1,0,0,0
+Pondok Pinang,Kebayoran Lama,19,0,0,3,5,0,8,1,1,1,0,0,8
+Kelapa Dua,Kebun Jeruk,7,0,0,0,0,0,6,0,0,0,0,0,1
+Kedoya Selatan,Kebun Jeruk,5,0,0,0,0,0,4,0,0,0,0,0,1
+Kedoya Utara,Kebun Jeruk,17,0,0,1,0,1,2,0,13,0,0,0,1
+Sukabumi Selatan,Kebun Jeruk,6,0,0,0,0,0,6,0,0,0,0,0,0
+Duri Kepa,Kebun Jeruk,35,0,1,0,2,0,4,0,31,0,0,0,0
+Sukabumi Utara,Kebun Jeruk,5,0,0,0,2,0,5,0,0,0,0,0,0
+Kebon Jeruk,Kebun Jeruk,10,0,0,0,0,0,9,1,0,0,0,0,0
+Kelapa Gading Barat,Kelapa Gading,16,0,1,0,4,1,7,0,7,0,0,0,1
+Kelapa Gading Timur,Kelapa Gading,15,0,0,1,0,0,10,0,1,0,0,0,4
+Pegangsaan Dua,Kelapa Gading,8,0,0,2,1,0,5,0,1,2,0,0,0
+Utan Panjang,Kemayoran,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kemayoran ,Kemayoran,3,0,0,0,0,0,2,0,1,0,0,0,0
+Kebon Kosong ,Kemayoran,2,0,0,0,0,0,2,0,0,0,0,0,0
+Sumur Batu,Kemayoran,4,0,0,0,0,0,4,0,0,0,0,0,0
+Harapan Mulia,Kemayoran,2,0,0,0,0,0,2,0,0,0,0,0,0
+Cempaka Baru ,Kemayoran,2,0,0,0,0,0,2,0,0,0,0,0,0
+Gunung Sahari Selatan ,Kemayoran,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kembangan Selatan,Kembangan,12,0,0,2,2,0,11,0,1,0,0,0,0
+Srengseng,Kembangan,2,0,0,0,0,1,1,0,0,0,0,0,0
+Kembangan Utara,Kembangan,11,0,0,1,0,0,7,0,0,0,0,0,4
+Meruya Selatan,Kembangan,4,0,0,0,0,0,4,0,0,0,0,0,0
+Meruya Utara,Kembangan,6,0,0,0,0,0,6,0,0,0,0,0,0
+Joglo,Kembangan,2,0,0,0,0,0,2,0,0,0,0,0,0
+Pulau Tidung,Kep. Seribu Selatan,1,0,0,0,0,0,1,0,0,0,0,0,0
+Rawa Badak Utara,Koja,10,0,0,0,3,1,5,0,0,0,0,0,4
+Tugu Utara,Koja,5,0,0,0,0,1,2,0,0,0,0,0,2
+Koja,Koja,2,0,0,0,0,0,2,0,0,0,0,0,0
+Lagoa,Koja,3,0,0,0,0,0,2,0,1,0,0,0,0
+Rawa Badak Selatan,Koja,4,0,0,0,4,1,3,0,0,0,0,0,0
+Tugu Selatan,Koja,4,0,0,0,6,1,3,0,0,0,0,0,0
+Kramat Jati,Kramat Jati,4,0,0,0,0,0,3,0,1,0,0,0,0
+Cililitan,Kramat Jati,11,0,0,0,3,0,5,0,6,0,0,0,0
+Cawang,Kramat Jati,17,0,0,1,2,0,11,0,5,0,0,0,1
+Kampung Tengah,Kramat Jati,4,0,0,0,0,0,4,0,0,0,0,0,0
+Batu Ampar,Kramat Jati,5,0,0,0,0,0,5,0,0,0,0,0,0
+Bale Kambang,Kramat Jati,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kebon Pala,Makasar,2,0,0,0,0,0,1,0,1,0,0,0,0
+Makasar,Makasar,5,0,0,0,0,0,3,0,2,0,0,0,0
+Cipinang Melayu,Makasar,3,0,0,0,0,0,0,0,3,0,0,0,0
+Halim Perdana Kusuma,Makasar,7,0,0,0,0,0,5,0,2,0,0,0,0
+Pinang Ranti,Makasar,3,0,0,0,0,0,3,0,0,0,0,0,0
+Pela Mampang,Mampang Prapatan,7,0,0,0,0,0,4,0,3,0,0,0,0
+Mampang Prapatan,Mampang Prapatan,2,0,0,0,0,0,2,0,0,0,0,0,0
+Tegal Parang,Mampang Prapatan,2,0,0,0,0,0,1,0,0,0,1,0,0
+Bangka,Mampang Prapatan,1,0,0,0,0,1,0,0,0,0,0,0,0
+Kayu Manis,Matraman,1,0,0,0,0,1,0,0,0,0,0,0,0
+Utan Kayu Selatan,Matraman,3,0,0,0,1,0,3,0,0,0,0,0,0
+Pisangan Baru,Matraman,6,0,0,0,1,0,6,0,0,0,0,0,0
+Pal Meriam,Matraman,5,0,0,0,0,2,2,0,0,0,0,0,1
+Utan Kayu Utara,Matraman,4,0,0,0,0,1,3,0,0,0,0,0,0
+Kebon Manggis,Matraman,3,0,1,0,0,0,1,0,2,0,0,0,0
+Pegangsaan ,Menteng,2,0,0,0,0,0,2,0,0,0,0,0,0
+Menteng,Menteng,6,0,0,0,0,0,5,0,1,0,0,0,0
+Cikini,Menteng,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kebon Sirih,Menteng,2,0,0,0,0,0,2,0,0,0,0,0,0
+Gondangdia,Menteng,3,0,0,0,0,0,2,0,0,1,0,0,0
+Ancol,Pademangan,12,0,0,3,5,1,6,0,4,0,0,1,0
+Pademangan Timur,Pademangan,8,0,0,0,0,1,6,0,1,0,0,0,0
+Pademangan Barat,Pademangan,12,0,0,0,0,0,6,0,5,0,0,0,1
+Kemanggisan,Palmerah,7,0,0,0,0,1,6,0,0,0,0,0,0
+Kota Bambu Utara,Palmerah,5,0,0,0,0,0,2,0,3,0,0,0,0
+Slipi,Palmerah,1,0,0,0,0,0,0,0,0,0,0,0,1
+Kota Bambu Selatan,Palmerah,2,0,0,0,0,0,2,0,0,0,0,0,0
+Palmerah,Palmerah,12,0,0,0,0,2,8,0,0,0,0,0,2
+Jati Pulo,Palmerah,5,0,0,0,0,1,1,0,2,0,0,0,1
+Duren Tiga,Pancoran,3,0,0,5,1,0,3,0,0,0,0,0,0
+Rawajati,Pancoran,6,0,0,1,0,0,1,0,4,0,0,0,1
+Pangadegan,Pancoran,8,0,0,0,0,1,6,0,1,0,0,0,0
+Pancoran,Pancoran,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kalibata,Pancoran,5,0,0,0,0,0,4,0,1,0,0,0,0
+Pasar Minggu,Pasar Minggu,7,0,0,0,0,0,7,0,0,0,0,0,0
+Jatipadang,Pasar Minggu,2,0,0,0,0,0,1,0,0,0,0,0,1
+Kebagusan,Pasar Minggu,4,0,0,0,0,0,3,0,0,0,0,1,0
+Cilandak Timur,Pasar Minggu,2,0,0,0,0,0,0,0,0,0,0,0,2
+Pejaten Timur,Pasar Minggu,7,0,0,0,0,0,4,0,3,0,0,0,0
+Ragunan,Pasar Minggu,4,0,0,0,0,0,4,0,0,0,0,0,0
+Pejaten Barat,Pasar Minggu,8,0,0,0,0,0,8,0,0,0,0,0,0
+Cijantung,Pasar Rebo,2,0,0,0,0,0,2,0,0,0,0,0,0
+Pekayon,Pasar Rebo,2,0,0,0,0,0,2,0,0,0,0,0,0
+Baru,Pasar Rebo,1,0,0,0,0,0,1,0,0,0,0,0,0
+Kalisari,Pasar Rebo,5,0,0,0,0,1,4,0,0,0,0,0,0
+Gedong,Pasar Rebo,3,0,0,1,0,0,2,0,0,1,0,0,0
+Kamal Muara,Penjaringan,3,0,0,0,0,0,3,0,0,0,0,0,0
+Pejagalan,Penjaringan,17,0,0,8,2,0,14,0,3,0,0,0,0
+Pluit,Penjaringan,30,0,0,1,0,0,15,0,15,0,0,0,0
+Kapuk Muara,Penjaringan,4,0,0,0,0,0,3,0,1,0,0,0,0
+Penjaringan,Penjaringan,63,0,0,0,1,2,11,0,49,0,0,0,1
+Petukangan Selatan,Pesanggrahan,4,0,0,0,0,0,4,0,0,0,0,0,0
+Pesanggrahan,Pesanggrahan,4,0,0,0,0,0,4,0,0,0,0,0,0
+Bintaro,Pesanggrahan,12,0,0,6,80,0,8,0,2,0,0,0,2
+Petukangan Utara,Pesanggrahan,2,0,0,0,0,0,2,0,0,0,0,0,0
+Ulujami,Pesanggrahan,9,0,0,0,0,0,4,0,5,0,0,0,0
+Jatinegara Kaum,Pulogadung,2,0,0,3,2,0,2,0,0,0,0,0,0
+Cipinang,Pulogadung,3,0,0,0,0,0,3,0,0,0,0,0,0
+Rawamangun,Pulogadung,6,0,0,2,0,0,6,0,0,0,0,0,0
+Pulogadung,Pulogadung,14,0,0,0,1,0,4,0,7,0,0,0,3
+Pisangan Timur,Pulogadung,1,0,0,0,0,0,1,0,0,0,0,0,0
+Jati,Pulogadung,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kayu Putih,Pulogadung,6,0,0,0,0,0,3,0,0,0,0,0,3
+Pasar Baru ,Sawah Besar,5,0,0,0,0,0,4,0,0,0,0,0,1
+Gunung Sahari Utara ,Sawah Besar,5,0,0,0,0,0,4,0,1,0,0,0,0
+Mangga Dua Selatan ,Sawah Besar,5,0,0,0,0,0,4,0,1,0,0,0,0
+Kartini,Sawah Besar,3,0,0,0,0,0,2,0,0,1,0,0,0
+Karang Anyar ,Sawah Besar,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kwitang ,Senen,3,0,0,0,0,0,3,0,0,0,0,0,0
+Kenari ,Senen,1,0,0,0,0,0,1,0,0,0,0,0,0
+Paseban ,Senen,4,0,0,1,1,0,4,0,0,0,0,0,0
+Bungur ,Senen,5,0,1,0,2,0,4,0,0,0,0,0,1
+Kramat,Senen,5,0,0,0,0,0,3,0,0,2,0,0,0
+Guntur,Setiabudi,1,0,0,0,0,0,0,0,1,0,0,0,0
+Setiabudi,Setiabudi,3,0,0,1,6,0,2,0,1,0,0,0,0
+Karet Semanggi,Setiabudi,2,0,0,0,0,0,2,0,0,0,0,0,0
+Pasar Manggis,Setiabudi,3,0,0,0,0,0,3,0,0,0,0,0,0
+Menteng Atas,Setiabudi,5,0,0,0,0,0,5,0,0,0,0,0,0
+Kuningan Timur,Setiabudi,1,0,0,0,0,0,1,0,0,0,0,0,0
+Pinangsia,Tamansari,9,0,0,0,0,2,4,0,3,0,0,0,0
+Maphar,Tamansari,4,0,0,1,0,2,2,0,0,0,0,0,0
+Keagungan,Tamansari,4,0,1,0,0,0,2,0,2,0,0,0,0
+Krukut,Tamansari,2,0,0,2,3,0,1,0,1,0,0,0,0
+Mangga Besar,Tamansari,4,0,0,0,0,0,4,0,0,0,0,0,0
+Tangki,Tamansari,3,0,0,0,0,0,3,0,0,0,0,0,0
+Taman Sari,Tamansari,5,0,0,0,0,0,5,0,0,0,0,0,0
+Glodok,Tamansari,2,0,0,0,0,0,1,0,0,0,0,0,1
+Jembatan Lima,Tambora,2,0,0,0,0,0,1,0,1,0,0,0,0
+Roa Malaka,Tambora,8,0,0,0,0,1,2,0,4,0,0,1,0
+Duri Selatan,Tambora,5,0,0,1,0,0,4,0,1,0,0,0,0
+Krendang,Tambora,3,0,0,0,1,0,3,0,0,0,0,0,0
+Jembatan Besi,Tambora,8,0,0,0,0,0,6,0,1,0,0,0,1
+Tanah Sereal,Tambora,7,0,0,0,0,0,5,0,2,0,0,0,0
+Angke,Tambora,4,0,0,0,0,0,3,0,1,0,0,0,0
+Tambora,Tambora,13,0,0,0,0,0,3,0,10,0,0,0,0
+Duri Utara,Tambora,1,0,0,0,0,1,0,0,0,0,0,0,0
+Pekojan,Tambora,14,0,0,0,0,0,4,0,10,0,0,0,0
+Kali Anyar,Tambora,4,0,0,0,2,1,3,0,0,0,0,0,0
+Petamburan ,Tanah Abang,2,0,0,0,0,0,1,0,1,0,0,0,0
+Gelora ,Tanah Abang,7,0,0,0,0,0,3,0,0,2,0,2,0
+Kebon Melati ,Tanah Abang,8,0,0,2,2,0,3,0,5,0,0,0,0
+Karet Tengsin,Tanah Abang,5,0,0,0,0,0,2,0,2,1,0,0,0
+Kampung Bali ,Tanah Abang,2,0,0,0,0,0,2,0,0,0,0,0,0
+Bendungan Hilir ,Tanah Abang,9,0,0,0,2,0,9,0,0,0,0,0,0
+Kebon Kacang ,Tanah Abang,3,0,0,0,0,0,3,0,0,0,0,0,0
+Tangerang,Tangerang,24,0,0,0,0,0,24,0,0,0,0,0,0
+Sungai Bambu,Tanjung Priok,8,0,0,1,0,1,5,1,0,0,0,0,1
+Warakas,Tanjung Priok,2,0,0,0,0,0,2,0,0,0,0,0,0
+Kebon Bawang,Tanjung Priok,9,0,0,0,0,1,5,0,0,0,0,0,3
+Sunter Jaya,Tanjung Priok,7,0,0,0,0,0,5,0,0,0,0,0,2
+Sunter Agung,Tanjung Priok,14,0,0,0,0,1,8,0,1,0,0,0,4
+Papanggo,Tanjung Priok,4,0,0,0,0,1,3,0,0,0,0,0,0
+Tanjung Priok,Tanjung Priok,8,0,0,1,0,0,4,0,1,0,0,0,3
+Kebon Baru,Tebet,4,0,0,0,0,0,0,0,3,0,0,0,1
+Bukit Duri,Tebet,9,0,0,0,2,0,4,0,5,0,0,0,0
+Tebet Barat,Tebet,10,0,0,0,0,1,9,0,0,0,0,0,0
+Tebet Timur,Tebet,6,0,0,0,0,0,5,0,0,0,0,1,0
+Manggarai ,Tebet,2,0,0,0,0,0,2,0,0,0,0,0,0
+Menteng Dalam,Tebet,8,0,0,0,0,1,7,0,0,0,0,0,0
+Manggarai Selatan,Tebet,5,0,0,0,0,0,5,0,0,0,0,0,0

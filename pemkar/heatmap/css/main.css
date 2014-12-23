@@ -1,0 +1,57 @@
+/* main.css */
+body {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.demo {
+   text-align: left;
+   font-size: 12px;
+   width: 100%;
+   height: 60px;
+}
+
+.map {
+   width: 100%;
+   height: 500px;
+}
+
+.regencies {
+   fill: #fff;
+}
+
+.regencies :hover {
+   fill: orange;
+}
+
+.boundary {
+   fill: none;
+   stroke: #000;
+   pointer-events: none;
+}
+
+#legend {
+   padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+   border-top-width: 15px;
+   border-top-style: solid;
+   font-size: .75em;
+   width: 30px;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.list-inline {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.list-inline li{
+	display: inline-block;
+}
+
+td {
+	vertical-align: top;
+}

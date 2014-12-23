@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<style>
+body {
+   font: 11px sans-serif;
+}
+
+.section {
+   width: 100%;
+   height: 370px;
+}
+
+.plot {
+   width: 600px;
+   float: left;
+   display: block;
+}
+
+.description {
+   width: 350px;
+   float: left;
+   display: block;
+}
+
+.axis path,
+.axis line {
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+}
+
+.dot {
+   stroke: #000;
+}
+
+.tooltip {
+   background-color: white;
+   position: absolute;
+   width: 160px;
+   height: 28px;
+   pointer-events: none;
+}
+</style>
+<body>
+<!-- <div class="plot" id="plot1"></div>
+ --><div class="plot" id="plot2"></div>
+<div class="plot" id="plot3"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 600 - margin.left - margin.right,
+    height = 350 - margin.top - margin.bottom;
+
+var x = d3.scale.linear().range([0, width]),
+    y = d3.scale.linear().range([height, 0]),
+    r = d3.scale.linear().range([3, 20]);
+
+var xAxis = d3.svg.axis().scale(x).tickFormat(d3.format('.0f')).orient("bottom"),
+    yAxis = d3.svg.axis().scale(y).orient("left");
+
+var plot1 = d3.select("#plot1").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var plot2 = d3.select("#plot2").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var plot3 = d3.select("#plot3").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+
+d3.csv("../res/station_effects.csv", function(error, data) {
+   data.forEach(function(d) {
+      d["jumlah_pos"] = +d["jumlah_pos"];  // convert to number
+      d["jumlah_insiden"] = +d["jumlah_insiden"];
+      d["waktu_respon"] = +d["waktu_respon"];
+      d["total_personil"] = +d["total_personil"];
+      d["total_kendaraan"] = +d["total_kendaraan"];
+      d["waktu_operasi"] = +d["waktu_operasi"];
+   });
+
+   data = data.filter(function(d) {
+      if(d["jumlah_pos"] == 0 || d["total_personil"] == 0) {
+         return false;
+      }
+      return true;
+   });
+   drawPlot1(data);
+   drawPlot2(data);
+   drawPlot3(data);
+});
+
+function drawPlot1(data) {
+   x.domain([d3.min(data, function(d) { return d["jumlah_pos"]; })-1, d3.max(data, function(d) { return d["jumlah_pos"]; })+1]);
+   y.domain([d3.min(data, function(d) { return d["jumlah_insiden"]; })-1, d3.max(data, function(d) { return d["jumlah_insiden"]; })+1]);
+
+   xAxis.ticks(d3.max(data, function(d) { return d["jumlah_pos"]; })+1);
+
+   plot1.append("g")
+         .attr("class", "x axis")
+         .attr("transform", "translate(0, " + height + ")")
+      .call(xAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("x", width)
+         .attr("y", -6)
+         .style("text-anchor", "end")
+         .text("Jumlah pos pemadam");
+
+   plot1.append("g")
+         .attr("class", "y axis")
+      .call(yAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("transform", "rotate(-90)")
+         .attr("y", 6)
+         .attr("dy", ".71em")
+         .style("text-anchor", "end")
+         .text("Total insiden");
+
+   // draw dots
+   plot1.selectAll(".dot")
+      .data(data)
+         .enter().append("circle")
+         .attr("class", "dot")
+         .attr("r", 2)
+         .attr("cx", function(d) { return x(d["jumlah_pos"]); })
+         .attr("cy", function(d) { return y(d["jumlah_insiden"]); })
+         .style("fill", "black") 
+         .on("mouseover", function(d) {
+            tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+            tooltip.html("<b>" + d["kecamatan"] + "</b><br/>" + d["jumlah_pos"] + " pos, " + d["jumlah_insiden"] + " insiden")
+         .style("left", (d3.event.pageX + 10) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+   })
+   .on("mouseout", function(d) {
+      tooltip.transition()
+         .duration(500)
+         .style("opacity", 0);
+   });
+}
+
+function drawPlot2(data) {
+   x.domain([d3.min(data, function(d) { return d["jumlah_pos"]; })-1, d3.max(data, function(d) { return d["jumlah_pos"]; })+1]);
+   y.domain([d3.min(data, function(d) { return d["waktu_respon"]; })-1, d3.max(data, function(d) { return d["waktu_respon"]; })+1]);
+
+   xAxis.ticks(d3.max(data, function(d) { return d["jumlah_pos"]; })+1);
+
+   plot2.append("g")
+         .attr("class", "x axis")
+         .attr("transform", "translate(0, " + height + ")")
+      .call(xAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("x", width)
+         .attr("y", -6)
+         .style("text-anchor", "end")
+         .text("Jumlah pos pemadam");
+
+   plot2.append("g")
+         .attr("class", "y axis")
+      .call(yAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("transform", "rotate(-90)")
+         .attr("y", 6)
+         .attr("dy", ".71em")
+         .style("text-anchor", "end")
+         .text("Rataan lama respon");
+
+   // draw dots
+   plot2.selectAll(".dot")
+      .data(data)
+         .enter().append("circle")
+         .attr("class", "dot")
+         .attr("r", 2)
+         .attr("cx", function(d) { return x(d["jumlah_pos"]); })
+         .attr("cy", function(d) { return y(d["waktu_respon"]); })
+         .on("mouseover", function(d) {
+            tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+            tooltip.html("<b>" + d["kecamatan"] + "</b><br/>" + 
+               d["jumlah_pos"] + " pos<br />" + 
+               "Rataan lama respon: " + d["waktu_respon"] + " menit")
+         .style("left", (d3.event.pageX + 10) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+   })
+   .on("mouseout", function(d) {
+      tooltip.transition()
+         .duration(500)
+         .style("opacity", 0);
+   });
+}
+
+function drawPlot3(data) {
+   x.domain([d3.min(data, function(d) { return d["total_personil"]; })-1, d3.max(data, function(d) { return d["total_personil"]; })+1]);
+   y.domain([d3.min(data, function(d) { return d["waktu_operasi"]; })-1, d3.max(data, function(d) { return d["waktu_operasi"]; })+1]);
+
+   plot3.append("g")
+         .attr("class", "x axis")
+         .attr("transform", "translate(0, " + height + ")")
+      .call(xAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("x", width)
+         .attr("y", -6)
+         .style("text-anchor", "end")
+         .text("Jumlah personil");
+
+   plot3.append("g")
+         .attr("class", "y axis")
+      .call(yAxis)
+         .append("text")
+         .attr("class", "label")
+         .attr("transform", "rotate(-90)")
+         .attr("y", 6)
+         .attr("dy", ".71em")
+         .style("text-anchor", "end")
+         .text("Rataan lama operasi (menit)");
+
+   // draw dots
+   plot3.selectAll(".dot")
+      .data(data)
+         .enter().append("circle")
+         .attr("class", "dot")
+         .attr("r", 3.5)
+         .attr("cx", function(d) { return x(d["total_personil"]); })
+         .attr("cy", function(d) { return y(d["waktu_operasi"]); })
+         .style("fill", "black") 
+         .on("mouseover", function(d) {
+            tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+            tooltip.html("<b>" + d["kecamatan"] + "</b><br/>" + 
+               d["total_personil"] + " personil<br />" + 
+               "Rataan lama operasi: " + d["waktu_operasi"] + " menit")
+         .style("left", (d3.event.pageX + 10) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+   })
+   .on("mouseout", function(d) {
+      tooltip.transition()
+         .duration(500)
+         .style("opacity", 0);
+   });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+   background: #fcfcfa;
+   color: #333;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   margin: 1em auto 4em auto;
+   position: relative;
+   width: 700px;
+}
+
+svg {
+   font: 10px sans-serif;
+}
+
+.bubble {
+   stroke: #fff;
+   stroke-width: .5px;
+}
+
+.bubble :hover {
+   stroke: #000;
+}
+.axis path, .axis line {
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+}
+
+.x.axis line {
+   stroke: #fff;
+   stroke-opacity: .8;
+}
+
+.y.axis line {
+   stroke: #000;
+}
+
+.legend circle {
+   fill: none;
+   stroke: #ccc;
+}
+
+.legend text {
+   fill: #777;
+   font: 10px sans-serif;
+   text-anchor: middle;
+}
+
+.q0-7{fill:rgb(252,187,161)}
+.q1-7{fill:rgb(252,146,114)}
+.q2-7{fill:rgb(251,106,74)}
+.q3-7{fill:rgb(239,59,44)}
+.q4-7{fill:rgb(203,24,29)}
+.q5-7{fill:rgb(153,0,13)}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v2.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 40, bottom: 10, left: 22},
+   width = 750,
+   height = 300 - margin.top - margin.bottom;
+
+var formatNumber = d3.format(",.0f");
+
+var x = d3.scale.linear()
+   .domain([0, 3000])
+   .range([0, width]);
+
+var y = d3.scale.linear()
+   .domain([1,70])
+   .range([height, 0]);
+
+var radius = d3.scale.sqrt()
+   .domain([0, 90])
+   .range([0, 34]);
+
+var color = d3.scale.quantize()
+   .domain([0, 600])
+   .range(d3.range(6).map(function(i) { return "q" + i + "-7"; }));
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickSize(12)
+    .tickFormat(",d");
+
+var yAxis = d3.svg.axis()
+   .scale(y)
+   .orient("left");
+
+var svg = d3.select("body").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+   .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// Add the x-axis
+svg.append("g")
+   .attr("class", "x axis")
+   .attr("transform", "translate(0," + height + ")")
+   .call(xAxis);
+
+// Add the y-axis.
+svg.append("g")
+   .attr("class", "y axis")
+   .call(yAxis);
+
+// Add an x-axis label.
+svg.append("text")
+   .attr("class", "x label")
+   .attr("text-anchor", "end")
+   .attr("x", width)
+   .attr("y", height - 6)
+   .text("Luas wilayah");
+
+// Add a y-axis label.
+svg.append("text")
+   .attr("class", "y label")
+   .attr("text-anchor", "end")
+   .attr("y", 6)
+   .attr("dy", ".75em")
+   .attr("transform", "rotate(-90)")
+   .text("Total insiden");
+
+// Add bubble legend
+var legend = svg.append("g")
+      .attr("class", "legend")
+      .attr("transform", "translate(" + (width - 80) + "," + (height/4) + ")")
+   .selectAll("g")
+      .data([10, 30, 60, 100])
+   .enter().append("g");
+
+legend.append("circle")
+      .attr("cy", function(d) { return -radius(d); })
+      .attr("r", radius);
+
+legend.append("text")
+      .attr("y", function(d) { return -2 * radius(d); })
+      .attr("dy", "1.3em")
+      .text(d3.format(".1s"));
+
+svg.append("g")
+      .attr("class", "legend")
+   .append("text")
+      .attr("transform", "translate(" + (width - 80) + "," + ((height/4) + 10) + ")")
+      .text("Jumlah korban jiwa");
+
+d3.csv("../res/incident_loss_report.csv", function(incident) {
+
+   var bubble = svg.append("g")
+         .attr("class", "bubble")
+      .selectAll(".bubble")
+         .data(incident)
+      .enter().append("circle")
+         .attr("class", function(d) { return color(d["waktu_operasi"]); })
+         .call(position)
+      .append("title")
+         .text(function(d) {
+            return d.kelurahan
+                  + "\nTotal insiden: " + formatNumber(d["total_insiden"])
+                  + "\nJumlah korban: " + formatNumber(d["total_korban_jiwa"])
+                  + "\nRataan lama operasi: " + formatNumber(d["waktu_operasi"]) + " menit";
+         });
+
+   function position(bubble) {
+      bubble .attr("cx", function(d) { return x(d["luas_wilayah"]); })
+         .attr("cy", function(d) { return y(d["total_insiden"]); })
+         .attr("r", function(d) { return radius(d["total_korban_jiwa"]) + 1; });
+   }
+});
+
+</script>
